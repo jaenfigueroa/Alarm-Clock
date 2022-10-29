@@ -1,3 +1,15 @@
+:root {
+  --primer-color: crimson;
+  --segundo-color: blue;
+  --tercer-color: rgb(57, 57, 255);
+  /* --segundo-color: rgb(250, 165, 37);
+  --tercer-color: rgb(255, 177, 61); */
+  --cuarto-color: rgb(58, 157, 150);
+  --quinto-color: rgb(214, 214, 214);
+  --sexto-color: white;
+  --septimo-color: #333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,14 +18,7 @@
   font-family: sans-serif;
 }
 html {
-  font-size: 62.5%; /* PARA USAR -> 1rem = 10px */
-}
-ul,
-ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
+  font-size: 62.5%;
 }
 /*///////////////////////////////////////////////*/
 body {
@@ -27,8 +32,6 @@ body {
   height: 360px;
   background-size: cover;
   filter: opacity(100%);
-  /* border: 1px solid black; */
-  /* background-color: rgb(198, 255, 204); */
 }
 .reloj .caja {
   width: 15.3em;
@@ -45,15 +48,14 @@ body {
 
 /* /////////////////////////////////////// */
 .cuerpo {
-  background-color: crimson;
+  background-color: var(--primer-color);
   border-radius: 100%;
 }
 .cuerpo:before {
   content: '';
   width: 13.4em;
   height: 13.4em;
-  background-color: rgb(206, 202, 255);
-  background-color: white;
+  background-color: var(--sexto-color);
   position: absolute;
   left: 1em;
   top: 1em;
@@ -62,7 +64,7 @@ body {
 .circulo-centro {
   width: 1.2em;
   height: 1.2em;
-  background-color: #333;
+  background-color: var(--septimo-color);
   position: absolute;
   border-radius: 100%;
   display: flex;
@@ -74,14 +76,13 @@ body {
   content: '';
   width: 0.8em;
   height: 0.8em;
-  background-color: crimson;
+  background-color: var(--primer-color);
   position: absolute;
   border-radius: 100%;
 }
 
 /* /////////////////////////////////////// */
 .manecillas {
-  background-color: rgba(172, 255, 47, 0);
   width: 15.3em;
   height: 15.3em;
   position: absolute;
@@ -94,59 +95,55 @@ body {
 }
 
 .hora {
-  background-color: rgba(172, 255, 47, 0);
   width: 0.6em;
   height: 7.4em;
-  /* transform: rotateZ(136deg); */
   position: absolute;
   overflow: hidden;
 
   transition: 1s;
 }
 .hora div:first-child {
-  background-color: #333;
+  background-color: var(--septimo-color);
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
   width: 100%;
   height: 6%;
 }
 .hora div:last-child {
-  background-color: #333;
+  background-color: var(--septimo-color);
   width: 100%;
   height: 44%;
 }
 
 .minuto {
-  background-color: rgba(172, 255, 47, 0);
   width: 0.6em;
   height: 8.4em;
-  /* transform: rotateZ(347deg); */
   position: absolute;
   overflow: hidden;
+
+  transition: 1s;
 }
 .minuto div:first-child {
-  background-color: #333;
+  background-color: var(--septimo-color);
 
   clip-path: polygon(50% 0%, 0 100%, 100% 100%);
   width: 100%;
   height: 5%;
 }
 .minuto div:last-child {
-  background-color: #333;
+  background-color: var(--septimo-color);
   width: 100%;
   height: 45%;
 }
 
 .segundo {
-  background-color: rgba(172, 255, 47, 0);
   width: 0.3em;
   height: 7.3em;
-  /* transform: rotateZ(208deg); */
   position: absolute;
   border-radius: 20px;
   overflow: hidden;
 }
 .segundo > div {
-  background-color: crimson;
+  background-color: var(--primer-color);
   width: 100%;
   height: 50%;
 }
@@ -154,10 +151,8 @@ body {
 /* /////////////////////////////////////// */
 .marcadores {
   z-index: 1;
-  /* background-color: rgba(0, 255, 255, 0.508); */
 }
 .marcadores-gruesos {
-  /* background-color: rgba(117, 121, 112, 0.267); */
   width: 0.43em;
   height: 11.9em;
   position: absolute;
@@ -167,7 +162,7 @@ body {
   justify-content: space-between;
 }
 .marcadores-gruesos > div {
-  background-color: rgb(58, 157, 150);
+  background-color: var(--cuarto-color);
   width: 100%;
   height: 15%;
   border-radius: 10px;
@@ -177,7 +172,6 @@ body {
 }
 
 .marcadores-delgados {
-  /* background-color: rgba(117, 121, 112, 0.267); */
   width: 0.3em;
   height: 11.9em;
   position: absolute;
@@ -188,7 +182,7 @@ body {
   transform: rotateZ(30deg);
 }
 .marcadores-delgados > div {
-  background-color: rgb(58, 157, 150);
+  background-color: var(--cuarto-color);
   width: 100%;
   height: 10%;
   border-radius: 10px;
@@ -205,7 +199,6 @@ body {
 }
 /* /////////////////////////////////////777 */
 .sombra {
-  /* background-color: rgba(0, 255, 255, 0.444); */
   display: flex;
   position: relative;
   width: 100%;
@@ -213,7 +206,7 @@ body {
   z-index: -2;
 }
 .sombra div {
-  background-color: rgb(214, 214, 214);
+  background-color: var(--quinto-color);
   width: 100%;
   height: 3%;
   border-radius: 100%;
@@ -223,7 +216,6 @@ body {
 
 /* ///////////////////////////// */
 .patas {
-  /* background-color: rgba(0, 255, 255, 0.384); */
   flex-direction: column;
   transform: translateY(-70px);
   z-index: -1;
@@ -238,22 +230,18 @@ body {
   justify-content: flex-end;
 }
 .patas > div:first-child {
-  /* background-color: red; */
   transform: rotateZ(115deg);
 }
 .patas > div:last-child {
-  /* background-color: blue; */
   transform: rotateZ(64deg);
 }
 .pata {
-  background-color: rgb(250, 165, 37);
-  background-color: blue;
+  background-color: var(--segundo-color);
   width: 50%;
   height: 100%;
 }
 /* ////////////////// */
 .centroT {
-  /* background-color: rgba(255, 0, 0, 0.266); */
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -262,8 +250,7 @@ body {
   z-index: -1;
 }
 .centroT > div {
-  background-color: rgb(250, 165, 37);
-  background-color: blue;
+  background-color: var(--segundo-color);
   width: 3.5%;
   height: 54%;
   position: absolute;
@@ -271,8 +258,7 @@ body {
 }
 .centroT > div::before {
   content: '';
-  background-color: rgb(250, 165, 37);
-  background-color: rgb(57, 57, 255);
+  background-color: var(--tercer-color);
   width: 35px;
   height: 10px;
   position: absolute;
@@ -281,7 +267,6 @@ body {
 }
 /* PALOS CAMPANAS//////////////////// */
 .palosCampanas {
-  /* background-color: rgba(255, 0, 0, 0.371); */
   transform: translateY(35px);
   z-index: -1;
 }
@@ -291,32 +276,29 @@ body {
   position: absolute;
 }
 .paloCampana:first-child {
-  /* background-color: greenyellow; */
   transform: rotateZ(29deg);
   animation: campana1 0.1s linear infinite alternate-reverse;
 }
 .paloCampana:last-child {
-  /* background-color: rgba(255, 169, 10, 0.463); */
   transform: rotateZ(-29deg);
   animation: campana2 0.1s linear infinite alternate-reverse;
 }
 .paloCampana div {
-  background-color: rgb(22, 22, 213);
+  background-color: var(--segundo-color);
   width: 100%;
   height: 50%;
   border-radius: 4px;
 }
 .paloCampana div:after {
   content: '';
-  background-color: rgba(255, 0, 0, 0.511);
-  background-color: rgb(57, 57, 255);
+  background-color: var(--tercer-color);
   width: 110px;
   height: 43px;
   position: absolute;
   transform: translateX(-50px);
   top: 17px;
   border-radius: 25px 25px 3px 3px;
-  animation: campana 0.2s linear infinite alternate-reverse;
+  animation: campanas 0.2s linear infinite alternate-reverse;
 }
 /* //////////////////////// */
 @keyframes campana1 {
@@ -331,7 +313,7 @@ body {
   }
 }
 
-@keyframes campana {
+@keyframes campanas {
   to {
     transform: translateX(-50px) scale(1, 0.9);
   }
