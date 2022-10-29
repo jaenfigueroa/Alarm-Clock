@@ -109,5 +109,6 @@
 
 <!-- - Website [tu-sitio-web.com](https://{your-web-site-link}) -->
 
-- GitHub [@jaenfigueroa](https://{github.com/your-usermame})
-- Twitter [@jaenfigueroa1](https://{twitter.com/your-username})
+- GitHub [@jaenfigueroa](https://github.com/jaenfigueroa})
+- Twitter [@jaenfigueroa1](https://twitter.com/jaenfigueroa1)
+- Facebook [@jaenfigueroa](https://facebook.com/jaenfigueroa)
