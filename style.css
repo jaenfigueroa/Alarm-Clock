@@ -209,12 +209,108 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  z-index: -2;
 }
 .sombra div {
-  background-color: rgba(78, 78, 78, 0.264);
+  background-color: rgb(214, 214, 214);
   width: 100%;
   height: 3%;
   border-radius: 100%;
   position: absolute;
   bottom: 0;
+}
+
+/* ///////////////////////////// */
+.patas {
+  /* background-color: rgba(0, 255, 255, 0.384); */
+  flex-direction: column;
+  transform: translateY(-70px);
+  z-index: -1;
+}
+.patas__contenedor {
+  height: 35px;
+  width: 466px;
+  position: absolute;
+  border-radius: 45%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+.patas > div:first-child {
+  /* background-color: red; */
+  transform: rotateZ(115deg);
+}
+.patas > div:last-child {
+  /* background-color: blue; */
+  transform: rotateZ(64deg);
+}
+.pata {
+  background-color: rgb(250, 165, 37);
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+}
+/* ////////////////// */
+.centroT {
+  /* background-color: rgba(255, 0, 0, 0.266); */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  z-index: -1;
+}
+.centroT > div {
+  background-color: rgb(250, 165, 37);
+  background-color: blue;
+  width: 3.5%;
+  height: 54%;
+  position: absolute;
+  top: -29px;
+}
+.centroT > div::before {
+  content: '';
+  background-color: rgb(250, 165, 37);
+  background-color: blue;
+  width: 35px;
+  height: 10px;
+  position: absolute;
+  transform: translateX(-13px);
+  border-radius: 10px;
+}
+/* PALOS CAMPANAS//////////////////// */
+.palosCampanas {
+  /* background-color: rgba(255, 0, 0, 0.371); */
+  transform: translateY(35px);
+  z-index: -1;
+}
+.paloCampana {
+  width: 4%;
+  height: 180%;
+  position: absolute;
+}
+.paloCampana:first-child {
+  /* background-color: greenyellow; */
+  transform: rotateZ(29deg);
+}
+.paloCampana:last-child {
+  /* background-color: rgba(255, 169, 10, 0.463); */
+  transform: rotateZ(-29deg);
+}
+.paloCampana div {
+  background-color: blue;
+  width: 100%;
+  height: 50%;
+  border-radius: 4px;
+}
+.paloCampana div:after {
+  content: '';
+  background-color: rgba(255, 0, 0, 0.511);
+  background-color: blue;
+  width: 110px;
+  height: 43px;
+  position: absolute;
+  transform: translateX(-50px);
+  top: 17px;
+  border-radius: 25px 25px 3px 3px;
 }
