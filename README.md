@@ -81,9 +81,13 @@
 
 <!-- Esta sección debe enumerar los principales lenguajes que utilizó para construir su proyecto -->
 
-- [React](https://reactjs.org/)
+<!-- - [React.js](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Tailwind](https://tailwindcss.com/) -->
+
+- [Html](https://developer.mozilla.org/es/docs/Web/HTML)
+- [Css](https://developer.mozilla.org/es/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 <!-- CARACTERISTICAS -->
 
