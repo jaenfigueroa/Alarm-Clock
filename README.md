@@ -37,7 +37,9 @@
 
 ## Overview
 
-![screenshot](/assets/alarm-clock.gif)
+<div >
+  <img src="./assets/alarm-clock.gif" align="center" style="width: 70%" />
+</div>
 
 <!-- Presente sus proyectos tomando una captura de pantalla o un gif. Intente contarles a los visitantes una historia sobre su proyecto respondiendo:
 
@@ -50,6 +52,28 @@
 - What was your experience?
 - What have you learned/improved?
 - Your wisdom? :) -->
+
+<!-- OVERVIEW -->
+
+<!-- ## Vista General -->
+
+<!-- ### Vista previa en Mobile
+
+<div >
+  <img src="./assets/capturas/mobile.gif" align="center" style="width: 70%" />
+</div> -->
+
+<!-- ### Vista previa en Tablet
+
+<div >
+  <img src="./assets/capturas/tablet.gif" align="center" style="width: 60%" />
+</div>
+
+### Vista previa en Desktop
+
+<div >
+  <img src="./assets/capturas/desktop.gif" align="center" style="width: 90%" />
+</div> -->
 
 <!-- CONSTRUIDO CON -->
 
