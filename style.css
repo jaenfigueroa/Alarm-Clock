@@ -25,7 +25,6 @@ body {
 .reloj {
   width: 310px;
   height: 360px;
-  /* background-image: url(/assets/reloj.jpg); */
   background-size: cover;
   filter: opacity(100%);
   /* border: 1px solid black; */
@@ -294,10 +293,12 @@ body {
 .paloCampana:first-child {
   /* background-color: greenyellow; */
   transform: rotateZ(29deg);
+  animation: campana1 0.1s linear infinite alternate-reverse;
 }
 .paloCampana:last-child {
   /* background-color: rgba(255, 169, 10, 0.463); */
   transform: rotateZ(-29deg);
+  animation: campana2 0.1s linear infinite alternate-reverse;
 }
 .paloCampana div {
   background-color: rgb(22, 22, 213);
@@ -315,5 +316,23 @@ body {
   transform: translateX(-50px);
   top: 17px;
   border-radius: 25px 25px 3px 3px;
+  animation: campana 0.2s linear infinite alternate-reverse;
 }
 /* //////////////////////// */
+@keyframes campana1 {
+  to {
+    transform: rotateZ(30.5deg);
+  }
+}
+
+@keyframes campana2 {
+  to {
+    transform: rotateZ(-30.5deg);
+  }
+}
+
+@keyframes campana {
+  to {
+    transform: translateX(-50px) scale(1, 0.9);
+  }
+}
