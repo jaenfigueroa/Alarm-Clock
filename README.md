@@ -1,10 +1,8 @@
 <!-- Actualice el valor en {}  -->
 
-<!-- <h1 align="center">{Your project name}</h1> -->
-
 <h1 align="center">Alarm Clock ⏰</h1>
 
-<div align="center">
+<!-- <div align="center">
    Animacion realizada con <a href="http://devchallenges.io" target="_blank"></a>
 </div>
 
@@ -22,7 +20,7 @@
       Javascript
     </a>
   </h3>
-</div>
+</div> -->
 
 <!-- TABLA DE CONTENIDO -->
 
