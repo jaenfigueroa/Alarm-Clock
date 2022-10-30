@@ -100,7 +100,7 @@ body {
   position: absolute;
   overflow: hidden;
 
-  transition: 1s;
+  /* transition: 1s; */
 }
 .hora div:first-child {
   background-color: var(--septimo-color);
@@ -120,7 +120,7 @@ body {
   position: absolute;
   overflow: hidden;
 
-  transition: 1s;
+  /* transition: 1s; */
 }
 .minuto div:first-child {
   background-color: var(--septimo-color);
