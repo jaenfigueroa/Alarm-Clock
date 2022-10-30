@@ -1,10 +1,8 @@
 :root {
   --primer-color: crimson;
-  --segundo-color: blue;
-  --tercer-color: rgb(57, 57, 255);
-  /* --segundo-color: rgb(250, 165, 37);
-  --tercer-color: rgb(255, 177, 61); */
-  --cuarto-color: rgb(58, 157, 150);
+  --segundo-color: rgb(246, 147, 0);
+  --tercer-color: rgb(255, 169, 41);
+  --cuarto-color: rgb(71, 165, 126);
   --quinto-color: rgb(214, 214, 214);
   --sexto-color: white;
   --septimo-color: #333;
