@@ -28,7 +28,7 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-  - [Web Site](#website)
+  - [Website](#website)
   <!-- - [Features](#features) -->
 - [Contact](#contact)
 
