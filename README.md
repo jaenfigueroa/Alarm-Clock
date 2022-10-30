@@ -38,7 +38,7 @@
 <!-- ### Vista previa en Mobile -->
 
 <div >
-  <img src="./assets/alarm-clock.gif" align="center" style="width: 70%" />
+  <img src="./assets/alarm.gif" align="center" style="width: 70%" />
 </div>
 
 <!-- ### Vista previa en Tablet
